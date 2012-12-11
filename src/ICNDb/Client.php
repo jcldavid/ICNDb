@@ -135,7 +135,7 @@ class Client {
 
 	/**
 	 * sets the method to get the total no. of jokes
-	 * @return [type] [description]
+	 * @return object Client
 	 */
 	public function count()
 	{
