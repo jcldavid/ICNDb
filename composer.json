@@ -1,7 +1,7 @@
 {
-    "name": "Apathetic012/ICNDb",
+    "name": "icndb/icndb",
     "description": "PHP Wrapper for The Chuck Norris Db API",
-    "keywords": ["chuck-norris","quotes"],
+    "keywords": ["chuck-norris","jokes","icndb"],
     "homepage": "http://github.com/Apathetic012/ICNDb",
     "license": "MIT",
     "authors": [
