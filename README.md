@@ -2,6 +2,9 @@
 
 A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.icndb.com).
 
+[![Build Status](https://travis-ci.org/Apathetic012/ICNDb.png)](https://travis-ci.org/Apathetic012]/ICNDb)
+
+
 # Install
 
 To ease the process, I recommend you use [composer](http://getcomposer.org/).
