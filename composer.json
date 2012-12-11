@@ -1,0 +1,21 @@
+{
+    "name": "Apathetic012/ICNDb",
+    "description": "PHP Wrapper for The Chuck Norris Db API",
+    "keywords": ["chuck-norris","quotes"],
+    "homepage": "http://github.com/Apathetic012/ICNDb",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cyrus David",
+            "email": "apathetic012@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "ICNDb": "src/"
+        }
+    }
+}
