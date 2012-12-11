@@ -67,6 +67,7 @@ $limit = $chuck->random()->limitTo('nerdy')->get();
 # Exceptions
 
 **APIUnavailableException** - API is either unreachable/unavailable
+
 **ChainNotAllowedException** - When these methods are chained together `random()`, `specific($id)`, `categories()`, `count()`
 
 
