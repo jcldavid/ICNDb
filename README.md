@@ -6,7 +6,7 @@ A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.ic
 
 To ease the process, I recommend you use [composer](http://getcomposer.org/).
 
-```
+```JSON
 {
 	"require": {
 		"icndb/icndb": "dev-master"
@@ -16,7 +16,8 @@ To ease the process, I recommend you use [composer](http://getcomposer.org/).
 
 # Usage
 
-```
+```php
+<?php
 $config = array(
 	'firstName' => 'Cyrus',
 	'lastName' => 'David'
