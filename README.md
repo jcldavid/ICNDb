@@ -26,35 +26,27 @@ $config = array(
 	'lastName' => 'David'
 );
 
-// Pass a parameter to the constructor the change the firstName and lastName
-// Default is _Chuck Norris_
+// Pass an optional parameter to change the firstName and lastName
+// Default is Chuck Norris
 $chuck = new ICNDb\Client($config);
 
 // Get the total Chuck Norris jokes stored in ICNDb
 $total = $chuck->count()->get();
-echo 'Total jokes: '."$total \n";
 
 // Get all categories
 $categories = $chuck->categories()->get();
-echo 'Chuck Norris categories: '.implode(', ', $categories)."\n";
 
 // Get a specific joke by it's ID
 $specific = $chuck->specific(18)->get();
-echo 'Joke no. 18: '.html_entity_decode($specific->joke)."\n";
 
 //Get a random joke
 $random = $chuck->random()->get();
-echo 'Random joke no. '.$random[0]->id.': '.$random[0]->joke."\n";
 
 // Get multiple random jokes
 $random2 = $chuck->random(3)->get();
-foreach ($random2 as $r) {
-	echo 'Random joke no. '.$r->id.': '.$r->joke."\n";
-}
 
 // use exclude() to get jokes not belong to that category
 $exclude = $chuck->random()->exclude('nerdy')->get();
-echo 'Random joke no. '.$exclude[0]->id.': '.$exclude[0]->joke."\n";
 
 // you can also supply an array
 $exclude2 = $chuck->random()->exclude(array('nerdy', 'explicit'))->get();
