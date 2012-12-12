@@ -12,7 +12,7 @@ To ease the process, I recommend you use [composer](http://getcomposer.org/).
 ```JSON
 {
 	"require": {
-		"icndb/icndb": "dev-master"
+		"icndb/icndb": "1.0.x"
 	}
 }
 ```
