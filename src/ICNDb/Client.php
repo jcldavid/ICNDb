@@ -180,6 +180,13 @@ class Client {
 		return $this->response['body']->value;
 	}
 
+	public function first()
+	{
+		$results = $this->get();
+
+		return reset($results);
+	}
+
 	/**
 	 * get the URL and check for includes/limitTos
 	 * @return String URL

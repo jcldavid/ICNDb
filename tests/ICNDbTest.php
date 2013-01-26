@@ -59,4 +59,20 @@ class ICNDbTest extends PHPUnit_Framework_TestCase {
 		// You can't get a random, and a specific joke all at the same time
 		$this->wrapper->specific(1)->categories()->get();
 	}
+
+	public function testFirstMethod()
+	{
+		$item = array(
+			'id' => 1,
+			'joke' => 'foo',
+			'categories' => array()
+		);
+
+		$mock = $this->getMock('ICNDb\Client', array('get'));
+		$mock->expects($this->once())
+			 ->method('get')
+			 ->will($this->returnValue(array($item)));
+
+ 		$this->assertEquals($item, $mock->random()->first());
+	}
 }
