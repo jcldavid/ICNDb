@@ -215,3 +215,6 @@ class Client {
 	}
 
 }
+
+class APIUnavailableException extends \Exception {}
+class ChainNotAllowedException extends \Exception {}
