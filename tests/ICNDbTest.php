@@ -1,13 +1,12 @@
 <?php
 
-namespace ICNDb;
+use ICNDb\Client;
 
-
-class ICNDbTest extends \PHPUnit_Framework_TestCase {
+class ICNDbTest extends PHPUnit_Framework_TestCase {
 
 	public function setUp()
 	{
-		$this->wrapper = new Client();
+		$this->wrapper = new Client;
 	}
 
 	public function testCanSetCustomConfig()
@@ -44,24 +43,20 @@ class ICNDbTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException ICNDb\ChainNotAllowedException
+	 * @expectedException LogicException
 	 */
 	public function testShouldNotChainSpecificAndRandom()
 	{
-		/**
-		 * You can't get a random, and a specific joke all at the same time
-		 */
+		// You can't get a random, and a specific joke all at the same time
 		$this->wrapper->random()->specific(1)->get();
 	}
 
 	/**
-	 * @expectedException ICNDb\ChainNotAllowedException
+	 * @expectedException LogicException
 	 */
 	public function testShouldNotChainJokeAndCategories()
 	{
-		/**
-		 * You can't get a random, and a specific joke all at the same time
-		 */
+		// You can't get a random, and a specific joke all at the same time
 		$this->wrapper->specific(1)->categories()->get();
 	}
 }
