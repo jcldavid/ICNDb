@@ -48,18 +48,12 @@ class Client {
 	 */
 	public function __construct($config = array())
 	{
-		if (empty($config))
-		{
+		if (empty($config)) {
 			$this->config = array(
-
 				'firstName' => '', // Defaults to Chuck if provided empty
 				'lastName' => '', // Defaults to Norris if provided empty
-
 			);
-		}
-
-		else
-		{
+		} else {
 			$this->config = $config;
 		}
 	}
@@ -152,7 +146,7 @@ class Client {
 	public function get()
 	{
 		if (count($this->method) > 1) {
-			throw new ChainNotAllowedException;
+			throw new \LogicException('Cannot use [' . implode(', ', $this->method) . '] at the same time.');
 		}
 
 		$ch = curl_init($this->getURL());
@@ -217,4 +211,3 @@ class Client {
 }
 
 class APIUnavailableException extends \Exception {}
-class ChainNotAllowedException extends \Exception {}
