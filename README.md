@@ -2,7 +2,7 @@
 
 A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.icndb.com).
 
-[![Build Status](https://travis-ci.org/Apathetic012/ICNDb.png)](https://travis-ci.org/Apathetic012]/ICNDb)
+[![Build Status](https://travis-ci.org/Apathetic012/ICNDb.png)](https://travis-ci.org/Apathetic012/ICNDb)
 [![Still Maintained](http://stillmaintained.com/Apathetic012/ICNDb.png)](http://stillmaintained.com/Apathetic012/ICNDb)
 
 
