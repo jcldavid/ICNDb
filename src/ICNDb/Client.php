@@ -193,15 +193,30 @@ class Client {
 	 */
 	private function getURL()
 	{
+        $queryParams = array();
+        $strQueryParams = '';
 		$url = static::$baseURL.$this->uri;
 
 		if ( ! empty($this->exclude)) {
-			$url .= '?exclude=['.implode(',', $this->exclude).']';
-		}elseif ( ! empty($this->limitTo)) {
-			$url .= '?limitTo=['.implode(',', $this->limitTo).']';
+            $queryParams[] = 'exclude=['.implode(',', $this->exclude).']';
+		}
+        if ( ! empty($this->limitTo)) {
+            $queryParams[] = 'limitTo=['.implode(',', $this->limitTo).']';
 		}
 
-		return $url;
+        if ( isset($this->config['firstName']) && ! empty($this->config['firstName'])) {
+            $queryParams[] = 'firstName='.$this->config['firstName'];
+        }
+
+        if ( isset($this->config['lastName']) && ! empty($this->config['lastName'])) {
+            $queryParams[] = 'lastName='.$this->config['lastName'];
+        }
+
+        if(count($queryParams) > 0){
+            $strQueryParams = '?'.implode("&", $queryParams);
+        }
+
+        return $url . $strQueryParams;
 	}
 
 	/**
