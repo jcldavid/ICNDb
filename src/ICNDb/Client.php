@@ -4,7 +4,7 @@ namespace ICNDb;
 
 class Client {
 
-	private static $baseURL = 'http://api.icndb.com/';
+	private static $baseURL = 'https://api.icndb.com/';
 
 	/**
 	 * @var array
