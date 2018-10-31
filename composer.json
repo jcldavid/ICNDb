@@ -1,17 +1,13 @@
 {
-    "name": "swapnilsarwe/icndb",
-    "description": "This repository is the fork of ICNDb repo by Cyrus David with few fixes and features.",
+    "name": "icndb/icndb",
+    "description": "PHP Wrapper for The Chuck Norris Db API",
     "keywords": ["chuck-norris","jokes","icndb"],
-    "homepage": "http://github.com/swapnilsarwe/icndb",
+    "homepage": "http://github.com/Apathetic012/ICNDb",
     "license": "MIT",
     "authors": [
         {
             "name": "Cyrus David",
             "email": "apathetic012@gmail.com"
-        },
-        {
-            "name": "Swapnil Sarwe",
-            "email": "swapnilsarwe@gmail.com"
         }
     ],
     "require": {
