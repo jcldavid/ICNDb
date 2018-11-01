@@ -2,6 +2,8 @@
 
 namespace Swapnilsarwe;
 
+use Swapnilsarwe\Exceptions\APIUnavailableException;
+
 class ICNDbClient
 {
     private static $baseURL = 'https://api.icndb.com/';
@@ -228,8 +230,4 @@ class ICNDbClient
         $this->exclude = [];
         $this->limitTo = [];
     }
-}
-
-class APIUnavailableException extends \Exception
-{
 }
