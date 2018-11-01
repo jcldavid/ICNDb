@@ -1,12 +1,12 @@
 <?php
 
-use Swapnilsarwe\Client;
+use Swapnilsarwe\ICNDbClient;
 
 class ICNDbTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->wrapper = new Client;
+        $this->wrapper = new ICNDbClient;
     }
 
     public function testCanSetCustomConfig()

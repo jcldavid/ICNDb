@@ -1,4 +1,4 @@
-# icndb/icndb
+# swapnilsarwe/icndb
 
 A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.icndb.com).
 
@@ -13,7 +13,7 @@ To ease the process, I recommend you use [composer](http://getcomposer.org/).
 ```JSON
 {
 	"require": {
-		"icndb/icndb": "1.0.x"
+		"swapnilsarwe/icndb": "1.0.x"
 	}
 }
 ```
@@ -29,7 +29,7 @@ $config = array(
 
 // Pass an optional parameter to change the firstName and lastName
 // Default is Chuck Norris
-$chuck = new ICNDb\Client($config);
+$chuck = new Swapnilsarwe\ICNDbClient($config);
 
 // Get the total Chuck Norris jokes stored in ICNDb
 $total = $chuck->count()->get();
