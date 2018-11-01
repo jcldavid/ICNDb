@@ -1,6 +1,6 @@
 <?php
 
-namespace ICNDb;
+namespace Swapnilsarwe;
 
 class Client
 {
