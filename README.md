@@ -1,10 +1,8 @@
 # swapnilsarwe/icndb
 
+This package has been moved to [codeat3](https://github.com/codeat3/) namespace with a package name [codeat/icndb](https://github.com/codeat3/icndb). Please use the alternative package.
+
 A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.icndb.com).
-
-[![Build Status](https://travis-ci.org/Apathetic012/ICNDb.png)](https://travis-ci.org/Apathetic012/ICNDb)
-[![Still Maintained](http://stillmaintained.com/Apathetic012/ICNDb.png)](http://stillmaintained.com/Apathetic012/ICNDb)
-
 
 # Install
 
