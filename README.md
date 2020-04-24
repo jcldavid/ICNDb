@@ -1,10 +1,8 @@
-# icndb/icndb
+# swapnilsarwe/icndb
+
+This package has been moved to [codeat3](https://github.com/codeat3/) namespace with a package name [codeat3/icndb](https://github.com/codeat3/icndb). Please use the alternative package.
 
 A PHP Wrapper for for the [Internet Chuck Norris Database (ICNDb)](http://www.icndb.com).
-
-[![Build Status](https://travis-ci.org/Apathetic012/ICNDb.png)](https://travis-ci.org/Apathetic012/ICNDb)
-[![Still Maintained](http://stillmaintained.com/Apathetic012/ICNDb.png)](http://stillmaintained.com/Apathetic012/ICNDb)
-
 
 # Install
 
@@ -13,7 +11,7 @@ To ease the process, I recommend you use [composer](http://getcomposer.org/).
 ```JSON
 {
 	"require": {
-		"icndb/icndb": "1.0.x"
+		"swapnilsarwe/icndb": "1.0.x"
 	}
 }
 ```
@@ -29,7 +27,7 @@ $config = array(
 
 // Pass an optional parameter to change the firstName and lastName
 // Default is Chuck Norris
-$chuck = new ICNDb\Client($config);
+$chuck = new Swapnilsarwe\ICNDbClient($config);
 
 // Get the total Chuck Norris jokes stored in ICNDb
 $total = $chuck->count()->get();

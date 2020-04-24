@@ -4,7 +4,7 @@ namespace Swapnilsarwe;
 
 use Swapnilsarwe\Exceptions\APIUnavailableException;
 
-class Client
+class ICNDbClient
 {
     private static $baseURL = 'https://api.icndb.com/';
 
